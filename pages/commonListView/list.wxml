@@ -1,0 +1,33 @@
+<template name="job_list">
+    <view class="weui-panel__bd">
+        <navigator url="../pluralityJobDetail/pluralityJobDetail?id={{id}}" class="weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__bd weui-media-box__bd_in-img">
+                <image class="weui-media-box__thumb thumb" src="../../images/pluripotent.png" mode="aspectFit"></image>
+            </view>
+
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title item-title">
+                    {{pluralityMsg}}
+                </view>
+
+                <view class="weui-media-box__desc item-moneyRate">
+                    酬金比例:{{moneyRate}}
+                </view>
+
+                <view class="weui-media-box__desc item-request">
+                    时间:{{timeInterval}}
+                </view>
+            </view>
+
+            <view class="weui-media-box__bd item-right">
+                <view class="weui-media-box__title item-salary">
+                    {{money}}
+                </view>
+                <view class="weui-media-box__desc item-getPlurality">获取详情</view>
+                <view class="weui-media-box__desc item-date">
+                    {{time}}
+                </view>
+            </view>
+        </navigator>
+    </view>
+</template>

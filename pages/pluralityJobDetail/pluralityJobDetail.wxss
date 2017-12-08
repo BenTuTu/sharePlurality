@@ -1,0 +1,85 @@
+/* pages/pluralityJobDetail/pluralityJobDetail.wxss */
+.containerView {
+    width: 100%;
+    background-color: rgb(235, 231, 231);
+}
+
+text {
+    width: 100%;
+    height: 32rpx;
+    font-size: 32rpx;
+    line-height: 32rpx;
+}
+
+.thisPluralityContent {
+    width: 100%;
+    
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent
+}
+
+.thisPluralityContent__title {
+    width: 100%;
+    height: 140rpx;
+    background-color: rgb(243, 239, 239);
+    overflow: hidden;
+}
+
+.thisPluralityContent__jobSte {
+    width: 100%;
+    height: 400rpx;
+    margin-top: 5rpx;
+    background-color:  rgb(243, 239, 239);
+}
+
+.thisPluralityContent__jobTime {
+    width: 100%;
+    height: 200rpx;
+    margin-top: 10rpx;
+    background-color:  rgb(243, 239, 239);  
+}
+
+.checkBox {
+    margin: 5rpx 0;
+}
+
+.thisPluralityContent__jobContent {
+
+    width: 100%;
+    height: 1250rpx;
+    margin-top: 10rpx;
+    background-color:  rgb(243, 239, 239);
+}
+
+.getPlurality {
+    width: 94%;
+    height: 60rpx;
+    box-sizing: border-box;
+    margin: 20rpx 20rpx;
+    background-color: greenyellow;
+    overflow: hidden;
+}
+
+.signUp {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100rpx;
+    background-color:  rgb(243, 239, 239);
+    border-top: 0.1rpx solid rgb(168, 165, 165);
+    overflow: hidden;
+}
+
+.containerView .unnormal{  
+    width: 94%;
+    height: 60rpx;
+    box-sizing: border-box;
+    margin: 20rpx 18rpx 20rpx 20rpx;
+    border: 1px solid #FE0002 ;  
+    color: #FE0002 ;  
+    background: #fff;  
+    overflow: hidden;
+  }  

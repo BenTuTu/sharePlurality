@@ -1,0 +1,101 @@
+/* pages/common/list.wxss */
+.item-title{
+    font-size: 32rpx;
+    color: #333333;
+    margin-bottom: 12rpx; 
+    width: 300rpx;
+    line-height: 64rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .item-moneyRate{
+    font-size: 28rpx;
+    color: #666;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-line-clamp:1;
+    margin-bottom: 14rpx; 
+  }
+
+  .item-request{
+    /* font-size: 26rpx;
+    color: #999; */
+    
+    height:84rpx;
+    color: red;
+    /* line-height:26rpx */
+  }
+  /* .weui-media-box__bd_in-appmsg{
+    height: 112rpx;
+    box-sizing: border-box;
+    overflow: hidden
+  } */
+  .item-date{
+    font-size: 24rpx;
+    color: #999;
+    height: 24rpx;
+    line-height: 24rpx;
+    margin-bottom: 0rpx;
+  }
+
+  .item-getPlurality {
+    font-size: 28rpx;
+    height: 40rpx;
+    margin-bottom: 40rpx;
+  }
+
+  .item-salary{
+    font-size: 38rpx;
+    color: #fd603a;
+    margin-bottom: 28rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+  }
+  .item-right{
+    text-align: right;
+    margin-right: 50rpx;
+    min-width:150rpx;
+    height: 188rpx;
+    line-height: 60rpx;
+  }
+  .thumb{
+    width: 120rpx;
+    max-height: auto;   
+    /* height: 50%; */
+    border-radius: 4rpx;
+    border:1px solid #f2f2f2;
+  }
+  .item-deliver{
+    font-size: 28rpx;
+    color: #F788AB;
+    line-height: 28rpx;
+    margin-bottom: 50rpx;
+  }
+  .item-dist{
+    font-size: 26rpx;
+    margin-top: 70rpx;
+    height: 26rpx;
+    color: #999;
+    line-height:26rpx;
+  }
+   
+  .weui-media-box_appmsg{
+    padding: 38rpx 30rpx 60rpx 40rpx;
+    border-bottom: 1rpx solid rgb(202, 197, 197);
+  }
+
+  .weui-media-box__bd_in-img {
+    width: 120rpx;
+    height: 148rpx;
+    margin-right: 64rpx;
+  }
+
+  .weui-media-box__bd_in-appmsg{
+    width: 750rpx;
+    height: 188rpx;
+    box-sizing: border-box;
+    overflow: hidden
+  }
+  

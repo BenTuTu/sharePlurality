@@ -1,0 +1,10 @@
+<!--pages/myPlurality/myPlurity.wxml-->
+<view class="container">
+    <view class="container__myMes center" bindtap="">
+        <text>个人信息</text>
+    </view>
+
+    <view class="container__mySignUp" hover-class="weui-cell_active" bindtap="goToGetPlurality">
+        <text>我的兼职</text>
+    </view>
+</view>

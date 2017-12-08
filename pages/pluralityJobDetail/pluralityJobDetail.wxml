@@ -1,0 +1,34 @@
+<!--pages/pluralityJobDetail/pluralityJobDetail.wxml-->
+<view class="containerView">   
+
+    <scroll-view scroll-y="true" class="thisPluralityContent" style="height:{{winHeight}}px">
+        
+        <view class="thisPluralityContent__title">
+            {{pluralityMsg}}
+        </view>
+
+        <view class="thisPluralityContent__jobSte">
+            <text>{{jobSte}}</text>  
+        </view>
+
+        <view class="thisPluralityContent__jobTime">
+            工作日期:{{time}}
+            <checkbox-group bindchange="checkboxChange" class="checkBox">
+                <label class="checkbox" wx:for-items="{{items}}" wx:key="index">
+                    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+                </label>
+            </checkbox-group>
+            上班时段:{{timeInterval}}
+        </view>
+
+        <view class="thisPluralityContent__jobContent">
+           <text>{{jobContent}}</text>
+        </view>
+    
+    </scroll-view>
+    <view class="signUp">
+        <view class="{{getPlurality?'getPlurality':'unnormal'}} center" hover-class="weui-cell_active" bindtap="goRegistration">
+            我要报名
+        </view>
+    </view>
+</view>

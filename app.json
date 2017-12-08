@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/dialogue/dialogue",
+    "pages/pluralityJobDetail/pluralityJobDetail",
+    "pages/commonListView/list",
+    "pages/my/my",
+    "pages/getPlurality/getPlurality"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b9d46e",
+    "navigationBarTitleText": "共享兼职",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#a0910b",
+    "backgroundColor": "#b9d46e",
+    "borderStyle": "#e0e0e0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/homePage.png",
+        "selectedIconPath": "./images/homePageSel.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/minePlurality.png",
+        "selectedIconPath": "./images/minePluralitySel.png"
+      }
+    ]
+  }
+}

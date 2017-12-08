@@ -1,0 +1,50 @@
+/* pages/myPlurality/myPlurity.wxss */
+.container {
+    background-color: gainsboro;
+}
+
+.container__myMes {
+    width: 100%;
+    height: 240rpx;
+    background-color: white;
+}
+
+.container__myMes:after {
+    content: ''; 
+    position: absolute;
+    width: 16rpx;
+    height: 16rpx;
+    border: 1px solid #333;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    right: 30rpx;
+    top: 112rpx;
+    transform: rotate(45deg); 
+}
+
+.container__mySignUp {
+    width: 100%;
+    height: 80rpx;
+    margin-top: 30rpx;
+    background-color: white;
+}
+
+.container__mySignUp:after {
+    content: ''; 
+    position: absolute;
+    width: 16rpx;
+    height: 16rpx;
+    border: 1px solid #333;
+    right: 30rpx;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    top: 302rpx;
+    transform: rotate(45deg); 
+}
+
+.container__mySignUp text {
+    font-size: 32rpx;
+    font-weight: 16rpx;
+    line-height: 32rpx;
+    margin-left: 10rpx;
+}

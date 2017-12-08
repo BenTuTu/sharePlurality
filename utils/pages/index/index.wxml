@@ -1,0 +1,74 @@
+<!--index.wxml-->
+<import src="../commonListView/list.wxml" />
+<view class="container">
+  <!--弹窗-->
+  <block>
+    <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+    <view class="modal-dialog" wx:if="{{showModal}}">
+      <view class="modal-title">个性推荐</view>
+      <view class="modal-content">
+        <view class="modal-content__left">
+          <image src="../../images/pluripotent.png" />
+        </view>
+        
+        <view class="modal-content__right">
+          <image src="../../images/hot.png" />
+          {{randomPlu}}
+        </view>
+      </view>
+      <view class="modal-footer">
+        <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+        <view class="btn-confirm" bindtap="getPlurality" data-status="getPlurality">详情</view>
+      </view>
+    </view>
+  </block>
+
+  <!-- 快速找工作 -->
+  <view class="page__hd">
+    
+      <view class="page__hd_search">
+        <navigator url="">
+          <view class="page__hd_search__left center">
+            <image src="../../images/searchPlurality.png"/>
+            快速找兼职
+          </view>
+        </navigator>
+
+        <view class="page__hd_search__right center">
+          定位:{{yourPosition}}
+        </view>
+      </view>
+    
+  </view>
+  <view class="page weui-tab">
+    <view class="swiper-tab">
+      <view class="swiper-tab-item {{activeIndex==0?'active':''}}" bindtap="changTab" data-index="0">全部兼职</view>
+      <view class="swiper-tab-item {{activeIndex==1?'active':''}}" bindtap="changTab" data-index="1">家教兼职</view>
+      <view class="swiper-tab-item {{activeIndex==2?'active':''}}" bindtap="changTab" data-index="2">在线兼职</view>
+    </view>
+    <swiper current='{{activeIndex}}' bindchange="swiperTab">
+      <swiper-item>
+        <view class="swiper-item weui-tab__content">
+          <block wx:for="{{jobs}}" wx:key="{{index}}">
+            <template is="job_list" data="{{...item}}" />
+          </block>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="swiper-item weui-tab__content">
+          <block wx:for="{{nursery_list}}" wx:key="{{index}}">
+            <template is="job_list" data="{{...item}}" />
+          </block>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="swiper-item weui-tab__content">
+          <block wx:for="{{earlyTeach_list}}" wx:key="{{index}}">
+            <template is="job_list" data="{{...item}}" />
+          </block>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="page__ft"></view>
+</view>

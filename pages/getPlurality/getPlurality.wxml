@@ -1,0 +1,16 @@
+<!--pages/getPlurality/getPlurality.wxml-->
+<view class="container" >
+    <view class="container__title center">我的共享兼职</view>
+    <block wx:if="{{showModal}}">
+        <view class="container__content">
+            <view class="container__content__pluralityMsg center">{{pluralityMsg}}</view>
+            <view class="container__content__money center">{{money}}</view>
+        </view>
+
+        <view class="bt">
+            <button bindtap="completePlurality">完成</button>
+            <button bindtap="pluralityDetail">详情</button>
+        </view>
+    </block>
+</view>
+
